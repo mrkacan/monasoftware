@@ -24,9 +24,9 @@ const Home: NextPage = () => {
                 </motion.div>
 
                 <motion.p
-                    initial={{x: -1000, opacity: 0.1}}
-                    animate={{x: [-1000,0, 0, 0], opacity: [0,1,0,1]}}
-                    transition={{ duration: 2, times: [0.5, 0.7, 1], delay: .5}}
+                    initial={{scale: 0.95, opacity: 0.1}}
+                    animate={{scale: [0.95, 1], opacity: [0,1]}}
+                    transition={{ duration: 1, times: [0.5, 0.7, 1], delay: .5}}
                     className={styles.description}
                 >
 
@@ -36,7 +36,7 @@ const Home: NextPage = () => {
                 <motion.a
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
-                    transition={{ duration: 1, delay: 2.5}}
+                    transition={{ duration: 1, delay: 1}}
                     href="https://www.linkedin.com/company/monasoftware">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
