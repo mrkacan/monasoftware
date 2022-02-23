@@ -18,13 +18,13 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
-          We are still under{' '}
-          <code className={styles.code}>{`<Construction /> `}</code>
+          We are still under {' '}
+          <code className={styles.code}>{`<Construction />`}</code>
         </p>
 
         <div className={styles.grid}>
           <a href="https://www.linkedin.com/company/monasoftware" className={styles.card}>
-            <h2>LinkedIn &rarr;</h2>
+            <h2>LinkedIn &rarr;  s</h2>
           </a>
 
 
