@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
-          We are still under {' '}
+          We are still under{' '}
           <code className={styles.code}>{`<Construction />`}</code>
         </p>
 
