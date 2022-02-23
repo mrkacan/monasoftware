@@ -24,7 +24,7 @@ const Home: NextPage = () => {
 
         <div className={styles.grid}>
           <a href="https://www.linkedin.com/company/monasoftware" className={styles.card}>
-            <h2>LinkedIn &rarr;  s</h2>
+            <h2>LinkedIn &rarr;</h2>
           </a>
 
 
