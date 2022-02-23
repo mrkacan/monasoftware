@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         <div className={styles.container}>
             <Head>
                 <title>Mona Software</title>
-                <meta name="description" content="Mona Software"/>
+                <meta name="description" content="Mona Software provides good quality software development outsourced resources."/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
