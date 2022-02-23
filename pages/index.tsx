@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 
         <p className={styles.description}>
           We are still under{' '}
-          <code className={styles.code}>{`<Construction />`}</code>
+          <code className={styles.code}>{`<Construction /> `}</code>
         </p>
 
         <div className={styles.grid}>
