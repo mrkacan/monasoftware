@@ -2,8 +2,17 @@ import type {NextPage} from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import {motion} from 'framer-motion'
+import {useEffect, useState} from "react";
 
 const Home: NextPage = () => {
+    const [clicked, setClicked] = useState(false);
+    useEffect(()=> {
+        if(clicked){
+            setTimeout(()=> {
+                window.location.href = "https://www.linkedin.com/company/monasoftware"
+            }, 1000)
+        }
+    }, [clicked])
     return (
         <div className={styles.container}>
             <Head>
@@ -19,7 +28,7 @@ const Home: NextPage = () => {
                             animate={{opacity: 1}}
                             transition={{duration: 1}}
                 >
-                    <img src="/logo.png" width={250}/>
+                    <img src="/logo.png" width={150}/>
                 </motion.div>
 
                 <motion.p
@@ -35,9 +44,10 @@ const Home: NextPage = () => {
                 <motion.a
                     className={styles.social}
                     initial={{opacity: 0}}
-                    animate={{opacity: 1}}
-                    transition={{duration: 1, delay: 1}}
-                    href="https://www.linkedin.com/company/monasoftware">
+                    animate={{opacity: clicked ? 0 :1, scale:clicked ? 10 : 1}}
+                    onClick={()=>setClicked(true)}
+                    transition={{duration: 1, delay: clicked ? 0 : 1}}
+                >
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
                          width="70px"
                          height="70px">
