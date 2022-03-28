@@ -44,8 +44,8 @@ const Home: NextPage = () => {
                 <motion.a
                     className={styles.social}
                     initial={{opacity: 0}}
-                    animate={{opacity: clicked ? 0 :1, scale:clicked ? 10 : 1}}
-                    onClick={()=>setClicked(true)}
+                    animate={{opacity: clicked ? 0 : 1, scale: clicked ? 10 : 1}}
+                    onClick={() => setClicked(true)}
                     transition={{duration: 1, delay: clicked ? 0 : 1}}
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
