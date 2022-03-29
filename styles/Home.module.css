@@ -65,7 +65,7 @@
   padding: 0.75rem;
   font-weight: bold;
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
@@ -109,8 +109,8 @@
 }
 
 .social {
-  width: 71px;
-  height:71px;
+  width: 51px;
+  height:51px;
   border-radius: 10px;
   background-color: #eaeaea;
   display: flex;
