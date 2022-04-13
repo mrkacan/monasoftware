@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::after,
+  *::before {
+    z-index: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .scrollbar-styling::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    width: 9px; /* width of the entire scrollbar */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .scrollbar-styling::-webkit-scrollbar-track,
+  body::-webkit-scrollbar-track {
+    background-color: #001731;
+    cursor: pointer; /* color of the tracking area */
+  }
+  .scrollbar-styling::-webkit-scrollbar-track,
+  body::-webkit-scrollbar-thumb {
+    @apply bg-lightblue/50 cursor-pointer; /* color of the scroll thumb */
+    border-radius: 30em; /* roundness of the scroll thumb */
+
+    /* creates padding around scroll thumb */
+  }
+  .scrollbar-styling::-webkit-scrollbar-track,
+  body::-webkit-scrollbar-thumb:hover {
+    @apply bg-lightblue cursor-pointer;
+  } /* creates padding around scroll thumb */
+}
+
+@layer components {
+  .img,
+  .img span,
+  .img div {
+    @apply w-full h-full !important;
+  }
+  .container {
+    @apply max-w-6xl w-full m-auto;
+  }
+  .abs-center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+  .s-h-effect {
+    @apply cursor-pointer hover:opacity-75;
+  }
+  .blurry {
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(0.1rem);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    z-index: 201;
+    transform: translate(-10px, 15px);
+  }
+}
