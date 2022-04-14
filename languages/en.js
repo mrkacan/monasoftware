@@ -63,28 +63,14 @@ export const ourwork = [
     {
         id: "0",
         thumbnial: "/images/random/random1.jpeg",
-        title: " Better half Web site",
+        title: " Featured Work 1",
         description:
             " We design and build digital products. And we help shape the teams",
     },
     {
         id: "1",
         thumbnial: "/images/random/random2.jpeg",
-        title: " Better half  site Development",
-        description:
-            " We design and build digital products. And we help shape the teams",
-    },
-    {
-        id: "2",
-        thumbnial: "/images/random/random3.jpeg",
-        title: " Better half Web site UX Design",
-        description:
-            " We design and build digital products. And we help shape the teams",
-    },
-    {
-        id: "3",
-        thumbnial: "/images/random/random4.jpeg",
-        title: "  Better half Web site Testing",
+        title: " Featured Work 2",
         description:
             " We design and build digital products. And we help shape the teams",
     },
