@@ -36,7 +36,7 @@ function Footer() {
                         </h2>
                         <nav className="list-none mb-10">
                             {desktopNavData.map((link) => {
-                                return (<li className="py-2 text-sm">
+                                return (<li key={link.name} className="py-2 text-sm">
                                     <Link
                                         href={link.slug}>
                                         <a className="text-white  hover:text-gray-300 cursor-pointer">
