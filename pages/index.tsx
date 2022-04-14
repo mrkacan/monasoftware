@@ -8,7 +8,7 @@ import styles from '../styles/Home.module.css'
 import {motion} from 'framer-motion'
 
 
-const TempHome = ({onClick}) => {
+const TempHome = ({onClick}: { onClick: () => void }) => {
     const [clicked, setClicked] = useState(false);
     useEffect(() => {
         if (clicked) {
