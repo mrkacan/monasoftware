@@ -44,7 +44,7 @@ function Form({ initialLoad }) {
         variants={initialLoad}
         className="text-center my-2 py-2 text-xl font-semibold"
       >
-        {submit ? data.name.split(" ")[0] + "   Hello" : "Say Hello"}
+        {submit ? data.name.split(" ")[0] + "   Hello" : "Say Hello "}
         <motion.span
           className="inline-block"
           variants={wave}

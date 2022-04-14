@@ -12,7 +12,7 @@ function WhatWeDo() {
       <h2 className="text-xl lg:text-2xl pb-8 lg:pb-16 font-bold">
         What do we do !
       </h2>
-      <WhatWeDoGrid className="gap-8 pt-3 p-3" minCol="2">
+      <WhatWeDoGrid className="gap-14 pt-3 p-3" minCol="2">
         <Bracket />
         {whatwedo.map((item) => (
           <IconTitleText

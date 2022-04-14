@@ -14,8 +14,8 @@ function CoreValue() {
             <h2 className="text-lightblue uppercase font-semibold text-xl">
               {specilaity}
             </h2>
-            <h3 className="font-semibold md:text-lg text-base ">{title}</h3>
-            <p className="md:text-base text-sm">{description}</p>
+            <h3 className="text-base text-black font-semibold md:text-lg">{title}</h3>
+            <p className="text-gray-400 md:text-base text-sm">{description}</p>
           </div>
         ))}
       </div>

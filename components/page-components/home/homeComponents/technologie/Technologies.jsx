@@ -8,7 +8,7 @@ function Technologies() {
   return (
     <SectionTitleDescription>
       <TechnologieGrid
-        className="gap-4  items-between  justify-between place-content-center "
+        className="gap-4 items-between justify-between place-content-center"
         minCol="2"
       >
         {technologies.map((technologie) => (

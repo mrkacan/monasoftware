@@ -22,9 +22,9 @@ module.exports = {
         Sora: ["Sora", "sans-serif"],
       },
       colors: {
-        darkblue: "#001731",
-        lightblue: "#4EB5DB",
-        baseblue: "#2273BA",
+        'darkblue': "#001731",
+        'lightblue': "#4EB5DB",
+        'baseblue': "#2273BA",
       },
     },
   },

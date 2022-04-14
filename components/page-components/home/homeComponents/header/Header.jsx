@@ -10,12 +10,11 @@ function Header() {
 
         <div className="text-center lg:mt-16    lg:text-left">
           <h1 className="text-xl lg:text-2xl   lg:px-2 lg:py-6 py-10   font-semibold">
-            We make beautiful websites that{" "}
+            We make unique applications that{" "}
             <span className="text-lightblue">evolve</span> with your business
           </h1>
           <h2 className="text-sm font-light opacity-70 lg:px-2 lg:text-meduim  sm:max-w-[80%] max-w-[94%] m-auto lg:ml-0">
-            We design and build digital products. And we help shape the teams
-            and process that drive them forward.
+            We are addressing all sectors that need good quality software development outsourced resources, the company brings its projects to the best standards.
           </h2>
         </div>
       </div>
