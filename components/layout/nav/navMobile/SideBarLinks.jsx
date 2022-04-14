@@ -22,11 +22,11 @@ function SideBarLinks({desktop = false, data = []}) {
                     }}
                 >
                     <a
-                        className={`relative block w-full font-thin uppercase text-white   items-center p-4   transition-colors duration-200 justify-start bg-gradient-to-r ${
+                        className={`relative block w-full font-thin uppercase text-white items-center p-4 duration-200 justify-start ${
                             pathname == link.slug
-                                ? "from-white to-blue-100 lg:bg-none lg:text-white font-bold text-lightblue "
-                                : "border-r-4 lg:border-none"
-                        }  border-lightblue flex items-center  pl-8 lg:pl-0`}
+                                ? "from-white lg:bg-none lg:text-white font-bold text-lightblue"
+                                : ""
+                        }  lg:border-lightblue flex items-center  pl-8 lg:pl-0`}
                     >
             <span className="text-left">
               {(!desktop && link.icon && <link.icon size={24}/>) ||
@@ -72,7 +72,7 @@ function SideBarLinks({desktop = false, data = []}) {
                 className={`relative block w-full font-thin uppercase text-white   items-center p-4 cursor-pointer  transition-colors duration-200 justify-start bg-gradient-to-r ${
                     pathname == "/contact"
                         ? "from-white to-blue-100 lg:bg-none lg:text-white font-bold text-lightblue "
-                        : "border-r-4 lg:border-none"
+                        : "lg:border-none"
                 }  border-lightblue flex items-center  pl-8 lg:pl-0`}
             >
         <span className="text-left">

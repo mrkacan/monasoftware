@@ -61,7 +61,7 @@ function Career() {
             Careers, not jobs
           </span>
         </h2>
-        <div className="gap-6 grid xl:grid-cols-4 lg:grid-cols-3   grid-cols-2   md:items-between items-center justify-center  lg:justify-between place-content-center my-12">
+        <div className="gap-6 grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2   md:items-between items-center justify-center  lg:justify-between place-content-center my-12">
           {carrerSteps.map((technologie) => (
             <IconTitle key={technologie.id} title={technologie.title}>
               <technologie.Icon />

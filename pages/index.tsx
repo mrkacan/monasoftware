@@ -79,11 +79,6 @@ const TempHome = ({onClick}: { onClick: () => void }) => {
 export default function Home() {
     const [clickCount, setClickCount] = useState(0);
 
-
-    if (clickCount < 10) {
-        return <TempHome onClick={() => setClickCount(prev => prev + 1)}/>
-    }
-
     return (
         <>
             <Head>

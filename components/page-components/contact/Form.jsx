@@ -42,7 +42,7 @@ function Form({ initialLoad }) {
     <>
       <motion.h1
         variants={initialLoad}
-        className="text-center my-2 py-2 text-xl font-semibold"
+        className="text-center my-2 py-2 text-lg font-medium"
       >
         {submit ? data.name.split(" ")[0] + "   Hello" : "Say Hello "}
         <motion.span
@@ -78,7 +78,7 @@ function Form({ initialLoad }) {
           className="     pt-4 lg:p-8 p-2   py-8 space-y-4  xl:grid xl:grid-cols-2 items-baseline gap-6 "
         >
           <motion.button
-            className="absolute text-white flex items-center justify-center top-3 right-3 bg-red-600 font-mono   w-6 h-6  rounded-md "
+            className="absolute text-black flex items-center justify-center top-3 right-3 font-mono w-6 h-6 rounded-md text-xl"
             variants={initialLoad}
             onClick={() => {
               setOpen(false);
@@ -114,28 +114,11 @@ function Form({ initialLoad }) {
               onChange={(e) => {
                 setData({ ...data, [e.target.name]: e.target.value });
               }}
-              className={`w-full p-2 rounded-lg border-[3px] focus:outline-none focus:ring-offset-4 focus:ring-2 focus:ring-lightblue focus:border-gray-500   `}
+              className={`w-full p-2 rounded-lg border-[3px] focus:outline-none focus:ring-offset-4 focus:ring-2 focus:ring-lightblue focus:border-gray-500 mb-6`}
               placeholder="Email"
             />
           </label>
-          <label
-            htmlFor="accept"
-            className="flex items-center col-span-2 space-x-4"
-          >
-            <input
-              type="checkbox"
-              value={allowed}
-              onChange={(e) => {
-                setAllowed(!e.target.checked);
-              }}
-              id="accept"
-              className="font-lighter  w-6 h-6 text-lightblue focus:ring-2 focus:ring-darkblue focus:ring-offset-4 rounded-lg focus:ring-offset-lightblue "
-            />
-            <p>
-              I accept to
-              <span className="font-lighter text-lightblue"> Contact me </span>
-            </p>
-          </label>
+
           <button
             type="submit"
             onClick={() => {
