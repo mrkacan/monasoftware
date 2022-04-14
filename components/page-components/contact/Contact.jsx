@@ -48,7 +48,7 @@ function Contact() {
             >
               <motion.div
                 variants={overlay}
-                className="absolute -top-4 left-0 w-[120%] h-[120%] cursor-pointer bg-darkblue/75 blurry transition-all hover:bg-darkblue/50"
+                className="absolute -top-4 left-0 w-[120%] h-[120%] cursor-pointer bg-darkblue/50 blurry transition-all"
                 onClick={() => {
                   setOpen(false);
                 }}

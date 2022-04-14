@@ -53,7 +53,7 @@ function Footer() {
                         </h2>
                         <nav>
                 <span
-                    className="inline-flex w-44 sm:ml-auto sm:mt-4 mt-2 justify-start">
+                    className="inline-flex w-44 sm:ml-auto sm:mt-4 mt-2 sm:justify-start justify-center">
                   {/*<a*/}
                   {/*    href="https://www.linkedin.com/company/monasoftware"*/}
                   {/*    className="text-white cursor-pointer hover:opacity-40  "*/}

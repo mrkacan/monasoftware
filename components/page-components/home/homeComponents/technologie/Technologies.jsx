@@ -6,7 +6,7 @@ import IconTitle from "../../../../cards/IconTitle";
 import { technologies } from "../../../../../languages/en";
 function Technologies() {
   return (
-    <SectionTitleDescription>
+    <SectionTitleDescription isWhiteText={true}>
       <TechnologieGrid
         className="gap-4 items-between justify-between place-content-center"
         minCol="2"

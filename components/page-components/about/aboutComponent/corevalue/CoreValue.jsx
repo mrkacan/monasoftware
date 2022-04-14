@@ -7,6 +7,7 @@ function CoreValue() {
       className="bg-white text-gray-900 min-h-[800px]"
       title="Core values"
       description="who we are and what we aim to be are both deeply ingrained on our core values Together they are the north start that helps us move in the right direction"
+      isWhiteText={false}
     >
       <div className="grid md:grid-cols-4 gap-8  ">
         {coreValue.map(({ title, description, specilaity, id }) => (
