@@ -94,9 +94,6 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-
-
-
             <Layout HeaderComponent={Header}>
                 <HomePage/>
             </Layout>
