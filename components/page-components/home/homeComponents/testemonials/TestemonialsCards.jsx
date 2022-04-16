@@ -5,16 +5,10 @@ import DesktopTestemonials from "./DesktopTestemonials";
 import CardTestemonial from "../../../../cards/testemonialCard/TestemonialCard";
 function TestemonialsCards() {
   return (
-    <div className="w-full  flex flex-wrap   md:flex-row    mb-8 md:mb-0   items-center   ">
-      <div className=" lg:hidden block  ">
+    <div className="overflow-x-auto mb-8 md:mb-0 items-center flex flex-row">
         {testemonials.map((testemonial) => (
           <CardTestemonial key={testemonial.id} {...testemonial} />
         ))}
-      </div>
-      {
-        // ///////////////
-      }
-      <DesktopTestemonials />
     </div>
   );
 }

@@ -34,7 +34,7 @@ function CircleTitleList({ title = "Plaining", steps }) {
         <ul className=" space-y-1 pt-4 px-4 ">
           {steps.map((step) => (
             <li
-              className="text-xsm font-extralight opacity-70  capitalize"
+              className="text-xsm font-extralight opacity-70  capitalize w-36 sm:w-auto"
               key={step.id}
             >
               {step.title}
