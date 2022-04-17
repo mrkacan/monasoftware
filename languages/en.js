@@ -62,17 +62,17 @@ export const whatwedo = [
 export const ourwork = [
     {
         id: "0",
-        thumbnial: "/images/random/random1.jpeg",
-        title: " Featured Work 1",
+        thumbnial: "/images/ourworks/ourworks1.png",
+        title: " DomoPro",
         description:
-            " We design and build digital products. And we help shape the teams",
+            "The DOMO Care app accompanies your or your relatives’ health/security solution.",
     },
     {
         id: "1",
-        thumbnial: "/images/random/random2.jpeg",
-        title: " Featured Work 2",
+        thumbnial: "/images/ourworks/ourworks2.png",
+        title: "Pickle Play",
         description:
-            " We design and build digital products. And we help shape the teams",
+            "Pickleball is quickly becoming one of the most popular sports all around the world. As a result, the community around the game is growing at an unprecedented rate.",
     },
 ];
 export const testemonials = [

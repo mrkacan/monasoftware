@@ -8,7 +8,7 @@ function OurWork({ data }) {
       <h2 className="text-lg lg:text-2xl pb-8 lg:pb-14  lg:font-semiblod text-darkblue ">
         Some of our Featured works
       </h2>
-      <div className="grid md:grid-cols-2  grid-cols-1 align-center justify-center lg:gap-8 gap-5 lg:gap-y-10 gap-y-5 lg:px-2">
+      <div className="flex flex-row align-center justify-start overflow-x-auto">
         {data.map((work) => (
           <SimpleCard
             key={work.id}
