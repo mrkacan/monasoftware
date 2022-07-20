@@ -6,13 +6,13 @@ function CarrerCard({title, description}) {
     return (
         <AnimateSharedLayout>
             <article
-                className="shadow-base shadow-gray-300 rounded-xl p-4 py-7 min-h-40 h-full space-y-2 lg:flex items-center ">
+                className="shadow-base shadow-gray-300 rounded-xl p-4 min-h-40 h-full space-y-2 lg:flex items-center ">
                 <div className="my-4">
                     <motion.h3
                         layout
                         className="font-semibold    text-lg   text-gray-900"
                     >
-                        Business Development Manager - 2 Positions
+                        Business Development Manager
                     </motion.h3>
                     <motion.div layout>
                         <motion.div className={`${height} overflow-hidden `} layout>
@@ -35,20 +35,6 @@ function CarrerCard({title, description}) {
                                 ))}
                             </motion.ul>
                         </motion.div>
-                        <button
-                            className="text-lightblue md:mt-2 block  hover:text-darkblue  "
-                            onClick={() => {
-                                setHeight(() => {
-                                    if (height == "h-24") {
-                                        return "h-full";
-                                    } else {
-                                        return "h-24";
-                                    }
-                                });
-                            }}
-                        >
-                            read more
-                        </button>
                     </motion.div>
                 </div>
                 <h4 className="font-semibold  whitespace-nowrap   text-lg   text-gray-900 md:px-20 ">
