@@ -1,7 +1,6 @@
 import React from "react";
 import CarrerProvider from "../../../context/CarrerProvider";
 import CarrerCard from "../../cards/CarrerCard";
-import Contact from "./careerComponents/Contact";
 
 function Career() {
     return (
@@ -13,14 +12,11 @@ function Career() {
                             Become a Part of
                             <br/>
                             <span className="text-darkblue lg:text-2xl text-xl font-bold ">
-                Monasoftware Army Family
+                Monasoftware Family
               </span>
                         </h1>
                         <p className="py-6 lg:font-medium  ">
-                            We have some excellent openings for aspiring individuals who think
-                            that they have got the potential and skills that can be combined
-                            to bombard the ongoing revolution in the IT industry and across
-                            the digital solutions sector.
+                            We have a few postings that we think you might be interested in!
                         </p>
                     </div>
                     <div className="py-8 md:pt-20">
@@ -28,10 +24,10 @@ function Career() {
                             We Offer
                             <span
                                 className="text-darkblue inline-block px-2   lg:text-2xl text-xl font-semibold ">
-                Careers, not jobs
+                Quality Software Development!
               </span>
                         </h2>
-                        <p className="     py-6 lg:font-medium  first-letter:">
+                        <p className="py-6 lg:font-medium  first-letter:">
                             We require your assistance in developing high-end applications
                             that will improve the lives of our clients and their end-users.
                             Also, if you love being a part of the web, we have excellent
