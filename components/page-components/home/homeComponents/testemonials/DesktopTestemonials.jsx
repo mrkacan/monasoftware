@@ -14,7 +14,7 @@ function DesktopTestemonials() {
   return (
     <TestemonialsGrid ref={constraint}>
       <motion.div
-        initial={{ y: -100 }}
+        initial={{ y: 150 }}
         whileInView={{
           opacity: 1,
           y: 0,
