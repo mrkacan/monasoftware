@@ -1,11 +1,11 @@
-import React from "react";
+import { motion } from "framer-motion";
 import HeaderIcon from "../../styled-component/icons/HeaderIcon";
-
 function Header({ HeaderComponent }) {
+  const MotionHeader = motion(HeaderComponent);
   return (
     <>
-      {<HeaderComponent /> || (
-        <header className=" pt-[80px] p-4  py-12  text-center bg-darkblue text-white lg:min-h-[900px] h-full shadow-lg">
+      {<MotionHeader /> || (
+        <motion.header className=" pt-[80px] p-4  py-12  text-center bg-darkblue text-white lg:min-h-[900px] h-full shadow-lg">
           <div className="md:flex md:items-center container items-center gap-4">
             <HeaderIcon className="  pt-14 lg:order-1  w-[290px] lg:w-[1510px] " />
 
@@ -21,7 +21,7 @@ function Header({ HeaderComponent }) {
               </h2>
             </div>
           </div>
-        </header>
+        </motion.header>
       )}
     </>
   );

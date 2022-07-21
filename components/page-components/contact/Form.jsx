@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useContactContext } from "../../../context/ContactProvider";
-import { AnimateSharedLayout, motion } from "framer-motion";
-function Form({ initialLoad }) {
+function Form() {
   const [allowed, setAllowed] = useState(true);
   const [submit, setSubmit] = useState(false);
 
@@ -13,79 +12,42 @@ function Form({ initialLoad }) {
     e.preventDefault();
   }
 
-  const wave = {
-    initial: {
-      rotate: "0deg",
-      y: "0",
-    },
-    animate: {
-      rotate: "30deg",
-      transition: {
-        repeat: Infinity,
-        duration: 0.5,
-        type: "spring",
-        repeatType: "mirror",
-      },
-    },
-    he: {
-      rotate: "6deg",
-      scale: 1.1,
-      transition: {
-        repeat: Infinity,
-        duration: 0.41,
-        type: "spring",
-        repeatType: "mirror",
-      },
-    },
-  };
   return (
     <>
-      <motion.h1
-        variants={initialLoad}
-        className="text-center my-2 py-2 text-lg font-medium"
-      >
+      <h1 className="text-center my-2 py-2 text-lg font-medium">
         {submit ? data.name.split(" ")[0] + "   Hello" : "Say Hello "}
-        <motion.span
-          className="inline-block"
-          variants={wave}
-          initial={"initial"}
-          animate={submit ? "animate" : "he"}
-        >
-          👋
-        </motion.span>
-      </motion.h1>
+        <span className="inline-block">👋</span>
+      </h1>
 
       {submit ? (
-        <motion.div variants={initialLoad} className="py-8 px-4 text-center">
+        <div className="py-8 px-4 text-center">
           <h4 className="">Thank you for reaching out at 🎉</h4>
           <p className="border-b-lightblue border-b-4 inline-block font-semibold ">
             {data.email} 💌
           </p>
           <h4 className="">We will contact you soon as possible ✅</h4>
-          <motion.button
+          <button
             className=" text-white flex items-center justify-center top-3 right-3 bg-red-600 font-mono hover:bg-red-500   w-[60%] m-auto mt-8 py-2  rounded-md "
             onClick={() => {
               setOpen(false);
             }}
           >
             Close
-          </motion.button>
-        </motion.div>
+          </button>
+        </div>
       ) : (
-        <motion.form
-          variants={initialLoad}
+        <form
           onSubmit={handelSubmit}
           className="     pt-4 lg:p-8 p-2   py-8 space-y-4  xl:grid xl:grid-cols-2 items-baseline gap-6 "
         >
-          <motion.button
+          <button
             className="absolute text-black flex items-center justify-center top-3 right-3 font-mono w-6 h-6 rounded-md text-xl"
-            variants={initialLoad}
             onClick={() => {
               setOpen(false);
             }}
           >
             &times;
-          </motion.button>
+          </button>
           <label htmlFor="name" className="block col-span-2">
             <span className="mb-1 block font-semibold text-base text-gray-700">
               Name
@@ -129,7 +91,7 @@ function Form({ initialLoad }) {
           >
             Submit
           </button>
-        </motion.form>
+        </form>
       )}
     </>
   );

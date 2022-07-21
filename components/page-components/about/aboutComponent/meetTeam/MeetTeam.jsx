@@ -1,7 +1,6 @@
-import React from "react";
-import SectionTitleDescription from "../../../../styled-component/SectionTitleDescription";
-import { team } from "../../../../../languages/en";
 import Image from "next/image";
+import { team } from "../../../../../languages/en";
+import SectionTitleDescription from "../../../../styled-component/SectionTitleDescription";
 function MeetTeam() {
   return (
     <SectionTitleDescription
@@ -13,7 +12,13 @@ function MeetTeam() {
           <div key={id} className="min-h-40 w-full ">
             <div className="  mb-4    rounded-3xl">
               <div className=" block ">
-                <Image src={profileImg} alt={name} width="200" height={200} />
+                <Image
+                  src={profileImg}
+                  alt={name}
+                  width="200"
+                  height={200}
+                  priority
+                />
               </div>
             </div>
             <div className="pl-1 pt-3">

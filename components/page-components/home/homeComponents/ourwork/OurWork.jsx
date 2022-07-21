@@ -1,5 +1,3 @@
-import React from "react";
-
 import SimpleCard from "../../../../cards/simpleCard/SimpleCard";
 
 function OurWork({ data }) {
@@ -8,7 +6,7 @@ function OurWork({ data }) {
       <h2 className="text-lg lg:text-2xl pb-8 lg:pb-14  lg:font-semiblod text-darkblue ">
         Some of our Featured works
       </h2>
-      <div className="flex flex-row align-center justify-start overflow-x-auto">
+      <div className="flex flex-row align-center justify-start overflow-x">
         {data.map((work) => (
           <SimpleCard
             key={work.id}

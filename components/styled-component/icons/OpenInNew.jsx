@@ -1,6 +1,4 @@
-import React from "react";
-
-function OpenInNew({ w = "24", h = "24" }) {
+function OpenIcon({ w = "24", h = "24" }) {
   return (
     <svg
       width={w}
@@ -17,4 +15,4 @@ function OpenInNew({ w = "24", h = "24" }) {
   );
 }
 
-export default OpenInNew;
+export default OpenIcon;

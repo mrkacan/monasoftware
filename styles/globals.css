@@ -35,13 +35,16 @@
   body::-webkit-scrollbar-thumb:hover {
     @apply bg-lightblue cursor-pointer;
   } /* creates padding around scroll thumb */
+  body {
+    @apply bg-[#001731];
+  }
 }
 
 @layer components {
   .img,
   .img span,
   .img div {
-    @apply w-full h-full !important;
+    @apply w-full h-full  bg-cover !important;
   }
   .container {
     @apply max-w-6xl w-full m-auto;
