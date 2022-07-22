@@ -33,7 +33,7 @@ function CardTestemonial({
     <CardStyled
       whileTap={{ scale: 0.9 }}
       whileHover={{ y: -10 }}
-      className="w-[480px] cursor-grab active:cursor-grabbing shadow-lg mx-auto lg:rounded-3xl rounded-xl p-6 lg:p-9 m-6 lg:m-4 bg-darkblue"
+      className="max-w-[480px] w-full cursor-grab active:cursor-grabbing shadow-lg mx-auto lg:rounded-3xl rounded-xl p-6 lg:p-9 m-6 lg:m-4 bg-darkblue"
     >
       <h6 className=" text-white text-base font-semibold mb-3 ">{title}</h6>
       <p className=" text-white/90 text-xsm font-extralight  ">{description}</p>

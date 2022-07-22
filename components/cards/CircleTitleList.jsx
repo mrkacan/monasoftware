@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import Dashed from "../styled-component/icons/Dashed";
 export const GridCol = styled.article`
@@ -22,7 +21,7 @@ export const GridCol = styled.article`
 `;
 function CircleTitleList({ title = "Plaining", steps }) {
   return (
-    <GridCol className="  lg:gap-2 ">
+    <GridCol className="  lg:gap-2">
       <div className="relative bg-red-400/0 w-[150px] h-[150px] lg:mb-3">
         <Dashed />
 

@@ -3,12 +3,15 @@ import "../styles/globals.css";
 
 import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
+import AppProvider from "../context/AppProvider";
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   return (
-    <AnimatePresence exitBeforeEnter>
-      <Component {...pageProps} key={router.route} />
-    </AnimatePresence>
+    <AppProvider>
+      <AnimatePresence exitBeforeEnter>
+        <Component {...pageProps} key={router.route} />
+      </AnimatePresence>
+    </AppProvider>
   );
 }
 

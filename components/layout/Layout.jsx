@@ -1,6 +1,7 @@
 import { motion, useAnimationControls } from "framer-motion";
 import React from "react";
 import ContactProvider from "../../context/ContactProvider";
+import { useIsMobileContext } from "../../context/IsMobileProvider";
 import Contact from "../page-components/contact/Contact";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
@@ -40,13 +41,14 @@ function Layout({ children, HeaderComponent }) {
 }
 
 function FlashEffect({ animation }) {
-  const variantParent = { initial: {}, animate: {} };
+  const isMobile = useIsMobileContext();
+  console.log(isMobile);
   const variant = {
     animate: (custom) => {
       return {
         rotate: "10deg",
         scale: 3.5,
-        x: 470 + "vw",
+        x: isMobile ? "200rem" : "350rem",
         skew: "-60deg",
         width: "50vw",
         transition: { duration: 1, delay: custom * 0.1 },
@@ -62,7 +64,7 @@ function FlashEffect({ animation }) {
           variants={variant}
           animate={animation}
           custom={i}
-          className={`absolute left-[-90vw] skew-x-[-50deg]   w-[100vw] h-full  ${color}`}
+          className={`absolute left-[-105vw] skew-x-[-50deg]   w-[100vw] h-full  ${color}`}
         ></motion.div>
       ))}
     </section>

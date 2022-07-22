@@ -1,13 +1,12 @@
-import React from "react";
-import AboutIcon from "../../../../../svgUI/AboutIcon";
 import { motion } from "framer-motion";
+import AboutIcon from "../../../../../svgUI/AboutIcon";
 
 function Header() {
   return (
     <motion.header className=" pt-[80px] p-4  py-12  text-center bg-darkblue text-white lg:min-h-[800px] h-full shadow-lg">
-      <div className="md:flex md:items-center container items-center gap-4 mt-24">
-        <div className="md:order-1">
-          <AboutIcon className="  pt-14   w-full md:w-[338px] " />
+      <div className="md:flex md:items-center container items-center gap-4 md:mt-24  -mt-12 m-auto">
+        <div className="md:order-1 m-auto  mb-4">
+          <AboutIcon className="  pt-14   w-full md:w-[338px] m-auto" />
         </div>
         <div className="text-center lg:mt-16    lg:text-left">
           <h1 className="text-xl lg:text-2xl  first-line:  lg:px-2 lg:py-6 py-10   font-semibold">
